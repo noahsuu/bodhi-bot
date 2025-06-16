@@ -1,4 +1,5 @@
 require('dotenv').config();
+console.log("DISCORD_TOKEN loaded:", process.env.DISCORD_TOKEN ? "✅ YES" : "❌ NO");
 const { Client, GatewayIntentBits, AttachmentBuilder } = require('discord.js');
 const fetch = require('node-fetch');
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
